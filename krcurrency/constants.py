@@ -50,3 +50,9 @@ class CurrencyCode(Enum):
     QAR = 'Qatar'
     XAU = 'GOLD 1g'
     XAG = 'SILVER 1g'
+
+    @classmethod
+    def ismember(cls, currency):
+        """"""
+        currency = currency.upper()
+        return currency in cls.__members__
