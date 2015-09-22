@@ -17,7 +17,7 @@ def request(url, encoding='utf-8', parselib='lxml'):
         return None
     soup = None
     try:
-        soup = BeautifulSoup(r.text, parselib)
+        soup = BS(r.text, parselib)
     except Exception as e:
         pass
     return soup
